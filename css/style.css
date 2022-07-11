@@ -314,6 +314,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
+
+
 .info {
   margin: 0;
   padding: 0;
@@ -980,6 +982,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 50px 0;
   text-align: center;
   width: 100%;
+  color : #4B5D67;
+  background-color: #fff;
 }
 #fh5co-footer p:last-child {
   margin-bottom: 0;
@@ -1110,13 +1114,13 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #FF9000;
+  background: #34B3F1;
   color: #fff;
-  border: 2px solid #FF9000;
+  border: 2px solid #EEEEEE;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ff9b1a !important;
-  border-color: #ff9b1a !important;
+  background: #CDC2AE !important;
+  border-color: #CDC2AE !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
