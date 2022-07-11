@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #66BFBF;
+  background: #4B5D67;
 }
 #fh5co-features h2 {
   color: #fff;
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #FF9000;
+  background: #4B5D67;
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -337,7 +337,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li .first-block {
   width: 40%;
   display: inline-block;
-  float: left;
   color: #000;
   font-weight: bold;
 }
@@ -532,7 +531,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  background-color: #3AB0FF;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -979,7 +978,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-footer {
   padding: 50px 0;
-  float: left;
+  text-align: center;
   width: 100%;
 }
 #fh5co-footer p:last-child {
