@@ -733,12 +733,14 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   .work {
     height: 270px;
+   
   }
 }
 .work .desc {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
+  
   background: #fff;
   opacity: 0;
   -webkit-transition: 0.3s;
