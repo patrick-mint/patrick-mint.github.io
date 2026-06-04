@@ -21,8 +21,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #4d4d4d;
-  background: #fff;
+  color: #344054;
+  background: #f7f9fb;
 }
 
 #page {
@@ -53,13 +53,13 @@ body {
 }
 
 a {
-  color: #C2DED1;
+  color: #176b87;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #354259;
+  color: #0b3f55;
   outline: none;
   text-decoration: none;
 }
@@ -69,7 +69,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color: #182230;
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #36454F;
+  background: rgba(24, 34, 48, 0.88);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -129,16 +129,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc h1,
 .fh5co-cover .display-tc h1 {
-  font-family: "Kaushan Script", cursive;
-  margin-bottom: 30px;
-  font-size: 50px;
+  font-family: "Space Mono", Arial, serif;
+  margin-bottom: 18px;
+  font-size: 48px;
   line-height: 1.3;
-  font-weight: 300;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  transform: rotate(-5deg);
+  font-weight: 700;
 }
 #fh5co-header .display-tc h1 span,
 .fh5co-cover .display-tc h1 span {
@@ -170,7 +165,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 34px;
+    font-size: 31px;
   }
   #fh5co-header .display-tc h1 span:before,
   .fh5co-cover .display-tc h1 span:before {
@@ -195,7 +190,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc h3,
 .fh5co-cover .display-tc h3 {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 18px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h3,
@@ -209,14 +206,16 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 176px;
+  width: 176px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 }
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
@@ -224,11 +223,45 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .fh5co-social-icons li a i,
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.hero-kicker {
+  color: #f7c873;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.hero-summary {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 20px auto 26px;
+  max-width: 680px;
+}
+
+.hero-actions {
+  margin-bottom: 24px;
+}
+
+.hero-actions .btn {
+  min-width: 150px;
+}
+
+.hero-social li a {
+  opacity: 0.9;
+}
+
+.hero-social li a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 #fh5co-features {
-  background: #4B5D67;
+  background: #12343b;
 }
 #fh5co-features h2 {
   color: #fff;
@@ -237,8 +270,14 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
 }
 #fh5co-features .feature-left {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   float: left;
+  width: 100%;
+  min-height: 275px;
+  padding: 28px 24px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
 }
 @media screen and (max-width: 992px) {
   #fh5co-features .feature-left {
@@ -248,8 +287,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-features .feature-left .icon {
   display: table;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 76px;
+  height: 76px;
   margin: 0 auto;
   background: #fff;
   margin-bottom: 20px;
@@ -259,23 +298,23 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-features .feature-left .icon i {
-  font-size: 50px;
+  font-size: 36px;
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  color: #839AA8 !important;
+  height: 76px;
+  color: #176b87 !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
 }
 #fh5co-features .feature-left h3 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   color: #fff;
 }
 #fh5co-features .feature-left p {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.78);
 }
 #fh5co-features .feature-left p:last-child {
   margin-bottom: 0;
@@ -295,6 +334,15 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-about,
+#fh5co-skills {
+  background: #fff;
+}
+
+#fh5co-resume {
+  background: #f3f6f8;
+}
 @media screen and (max-width: 768px) {
   #fh5co-about,
   #fh5co-resume,
@@ -313,8 +361,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-bg-dark {
-  background: #2F3C4F;
-  background: #4B5D67;
+  background: #182230;
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -325,7 +372,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .info {
   margin: 0;
   padding: 0;
-  width: 90%;
+  width: 94%;
   float: left;
 }
 @media screen and (max-width: 768px) {
@@ -337,7 +384,8 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
   list-style: none;
-  padding: 10px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf1f4;
 }
 .info li:first-child {
   padding-top: 0;
@@ -346,13 +394,14 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 40%;
   display: inline-block;
   float: left;
-  color: #000;
+  color: #182230;
   font-weight: bold;
 }
 .info li .second-block {
   width: 60%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: #667085;
+  word-break: break-word;
 }
 
 .fh5co-social-icons {
@@ -399,7 +448,7 @@ h1, h2, h3, h4, h5, h6, figure {
   zoom: 1;
   *display: inline;
   color: #fff;
-  background: #2F3C4F;
+  background: #182230;
   padding: 10px 10px 2px 10px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -410,11 +459,46 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #839AA8;
+  background: #176b87;
+}
+
+.profile-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 28px;
+}
+
+.profile-highlights div {
+  flex: 1 1 180px;
+  padding: 16px;
+  background: #f7f9fb;
+  border: 1px solid #e6edf2;
+  border-radius: 8px;
+}
+
+.profile-highlights strong,
+.profile-highlights span {
+  display: block;
+}
+
+.profile-highlights strong {
+  color: #182230;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.profile-highlights span {
+  color: #667085;
+  font-size: 14px;
+}
+
+.about-social {
+  margin-top: 4px;
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
@@ -423,7 +507,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #000;
+  color: #182230;
+  font-weight: 700;
 }
 .fh5co-heading p {
   font-size: 18px;
@@ -512,6 +597,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  padding: 26px;
+  background: #fff;
+  box-shadow: 0 16px 45px rgba(24, 34, 48, 0.08);
 }
 @media screen and (max-width: 768px) {
   .timeline > li > .timeline-panel {
@@ -540,7 +628,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #3AB0FF;
+  background-color: #176b87;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -590,6 +678,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline-title {
   margin-top: 0;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .company {
@@ -597,7 +687,12 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #bfbfbf;
+  color: #667085;
+}
+
+.timeline-body p {
+  color: #475467;
+  font-size: 15px;
 }
 
 .timeline-body > p,
@@ -644,75 +739,49 @@ h1, h2, h3, h4, h5, h6, figure {
     right: auto;
   }
 }
-.progress-wrap {
-  width: 100%;
-  float: left;
-  margin-bottom: 10px;
-}
-.progress-wrap h3 {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 10px;
-  float: left;
-  width: 100%;
-}
-.progress-wrap h3 .name-left {
-  float: left;
-}
-.progress-wrap h3 .value-right {
-  float: right;
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-.progress {
-  width: 100%;
-  float: left;
-  height: 5px;
-  box-shadow: none;
+.skill-card {
+  min-height: 168px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e6edf2;
+  border-radius: 8px;
+  box-shadow: 0 14px 40px rgba(24, 34, 48, 0.06);
 }
 
-.progress-bar {
-  background-color: #2F3C4F;
-  height: 5px;
-  display: block;
-  box-shadow: none;
-}
-.progress-bar.progress-bar-1 {
-  background-color: #2980b9 !important;
-}
-.progress-bar.progress-bar-2 {
-  background-color: #c0392b !important;
-}
-.progress-bar.progress-bar-3 {
-  background-color: #3a22d9 !important;
-}
-.progress-bar.progress-bar-4 {
-  background-color: #8e44ad !important;
-}
-.progress-bar.progress-bar-5 {
-  background-color: #27ae60 !important;
+.skill-card h3 {
+  margin-bottom: 12px;
+  color: #182230;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.chart {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 40px auto;
-  position: relative;
-  text-align: center;
+.skill-card p {
+  margin-bottom: 0;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.7;
 }
-.chart span {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -30px;
-  width: 100%;
+
+@media screen and (max-width: 992px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.chart span strong {
-  display: block;
-}
-.chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+
+@media screen and (max-width: 600px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: 0;
+  }
 }
 
 .work {
@@ -724,7 +793,14 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   display: table;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
 }
+
+.work.work-toms-pickup {
+  background-position: center top;
+}
+
 @media screen and (max-width: 768px) {
   .work {
     height: 400px;
@@ -741,7 +817,7 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: middle;
   height: 270px;
   
-  background: #fff;
+  background: rgba(255, 255, 255, 0.94);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -749,6 +825,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .desc h3 {
   font-size: 20px;
+  font-weight: 700;
+  color: #182230;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
@@ -756,7 +834,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .desc span {
   display: block;
-  color: #999999;
+  color: #667085;
   font-size: 14px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
@@ -991,7 +1069,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 50px 0;
   text-align: center;
   width: 100%;
-  color : #4B5D67;
+  color : #667085;
   background-color: #fff;
 }
 #fh5co-footer p:last-child {
@@ -1078,7 +1156,7 @@ input[type="text"] {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
+  background: #176b87;
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
@@ -1102,10 +1180,10 @@ input[type="text"] {
   font-family: "Space Mono", Arial, serif;
   font-size: 16px;
   font-weight: 400;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1123,22 +1201,97 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #34B3F1;
+  background: #176b87;
   color: #fff;
-  border: 2px solid #EEEEEE;
+  border: 2px solid #176b87;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #CDC2AE !important;
-  border-color: #CDC2AE !important;
+  background: #0b3f55 !important;
+  border-color: #0b3f55 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #839AA8;
-  border: 2px solid #839AA8;
+  color: #176b87;
+  border: 2px solid #176b87;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #839AA8;
+  background: #176b87;
   color: #fff;
+}
+
+.hero-actions .btn-primary.btn-outline {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.76);
+}
+
+.hero-actions .btn-primary.btn-outline:hover,
+.hero-actions .btn-primary.btn-outline:focus,
+.hero-actions .btn-primary.btn-outline:active {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: #182230;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-header,
+  .fh5co-cover {
+    background-attachment: scroll;
+  }
+
+  #fh5co-header .display-tc,
+  .fh5co-cover .display-tc {
+    padding: 44px 0;
+  }
+
+  #fh5co-header .display-tc .profile-thumb,
+  .fh5co-cover .display-tc .profile-thumb {
+    height: 136px;
+    width: 136px;
+    margin-bottom: 22px;
+  }
+
+  .hero-summary {
+    font-size: 14px;
+  }
+
+  .hero-actions .btn {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 10px;
+  }
+
+  .fh5co-heading h2 {
+    font-size: 32px;
+  }
+
+  #fh5co-features .services-padding {
+    padding: 3em 0;
+  }
+
+  #fh5co-features .feature-left {
+    min-height: 0;
+  }
+
+  .timeline > li > .timeline-panel {
+    padding: 20px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  #fh5co-header .display-tc h1 span:before,
+  .fh5co-cover .display-tc h1 span:before,
+  #fh5co-header .display-tc h1 span:after,
+  .fh5co-cover .display-tc h1 span:after {
+    display: none;
+  }
+
+  .info li .first-block,
+  .info li .second-block {
+    float: none;
+    width: 100%;
+  }
 }
 
 .btn-success {
