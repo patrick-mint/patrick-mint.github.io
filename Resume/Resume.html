@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pakornpat Amornlertpanit — Resume</title>
+	<style>
+		@page { size: A4; margin: 16mm 17mm; }
+		* { box-sizing: border-box; }
+		body { color: #182230; font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; line-height: 1.42; margin: 0; }
+		h1 { font-size: 22pt; letter-spacing: .5px; margin: 0 0 2px; }
+		h2 { border-bottom: 1.5px solid #27364a; font-size: 12pt; letter-spacing: .7px; margin: 21px 0 9px; padding-bottom: 4px; text-transform: uppercase; }
+		.contact { color: #475467; font-size: 9.5pt; }
+		.contact a { color: #175cd3; text-decoration: none; }
+		.summary { margin: 0; }
+		.role { break-inside: avoid; margin: 0 0 14px; }
+		.role-header { display: flex; justify-content: space-between; gap: 16px; }
+		.role-title { font-size: 11pt; font-weight: 700; }
+		.role-date { color: #475467; font-size: 9.5pt; text-align: right; white-space: nowrap; }
+		.company { color: #475467; margin: 1px 0 5px; }
+		ul { margin: 5px 0 0; padding-left: 18px; }
+		li { margin: 3px 0; }
+		.skills { display: grid; gap: 3px; }
+		.skills strong { display: inline-block; min-width: 120px; }
+		@media print { a { color: inherit !important; } }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>PAKORNPAT AMORNLERTPANIT</h1>
+		<div class="contact">Bangkok, Thailand · +66 87 795 9752 · <a href="mailto:pakornpat.a@gmail.com">pakornpat.a@gmail.com</a></div>
+		<div class="contact">GitHub: github.com/patrick-mint · Portfolio: patrick-mint.github.io</div>
+	</header>
+
+	<section>
+		<h2>Professional Summary</h2>
+		<p class="summary">Backend-focused software engineer experienced in payment systems, POS integrations, API integrations, and event-driven architecture. Skilled in Node.js, TypeScript, Java, Kafka, MySQL, AWS, and Docker, with production experience supporting transaction services, KYC-related workflows, and legacy application migration.</p>
+	</section>
+
+	<section>
+		<h2>Technical Skills</h2>
+		<div class="skills">
+			<div><strong>Languages:</strong> JavaScript, TypeScript, Java</div>
+			<div><strong>Backend:</strong> Node.js, Express, Spring Boot, REST APIs</div>
+			<div><strong>Data &amp; Events:</strong> MySQL, Redis, Kafka, XML/JSON transformation</div>
+			<div><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3, Lambda, CloudWatch), Docker</div>
+			<div><strong>Tools:</strong> Git, Postman, logging and monitoring</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Experience</h2>
+		<article class="role">
+			<div class="role-header"><div class="role-title">Java Developer (Contract)</div><div class="role-date">Mar 2026 – Present</div></div>
+			<div class="company">Counter Service Co., Ltd. (7-Eleven Group), Bangkok</div>
+			<ul>
+				<li>Develop and maintain backend services for payment systems and transaction processing.</li>
+				<li>Integrate external client systems and APIs; support testing with Postman.</li>
+				<li>Handle XML/JSON transformation and encryption/decryption workflows for KYC-related processes.</li>
+				<li>Migrate legacy applications from Java 8 and Tomcat 8 to Java 17 and Tomcat 10.1, updating dependencies and application configuration for compatibility.</li>
+				<li>Investigate production logs and resolve real-time service issues.</li>
+			</ul>
+		</article>
+		<article class="role">
+			<div class="role-header"><div class="role-title">Software Engineer (5A / 5B)</div><div class="role-date">Nov 2022 – Present</div></div>
+			<div class="company">Gosoft (Thailand) Co., Ltd., Bangkok</div>
+			<ul>
+				<li>Promoted from Software Engineer 5B to 5A in April 2025 based on performance.</li>
+				<li>Develop POS backend systems using Node.js and MySQL, including REST APIs and Redis caching.</li>
+				<li>Manage deployments in Docker and AWS environments, and support logging and monitoring with CloudWatch.</li>
+				<li>Work on integration with internal and external services.</li>
+			</ul>
+		</article>
+		<article class="role">
+			<div class="role-header"><div class="role-title">Senior Backend Engineer (Contract)</div><div class="role-date">Sep 2025 – Feb 2026</div></div>
+			<div class="company">Lotus's (CP Group), Bangkok</div>
+			<ul>
+				<li>Built Node.js and TypeScript backend services for POS systems.</li>
+				<li>Implemented Kafka-based event-driven architecture for real-time data processing.</li>
+				<li>Designed scalable APIs supporting high-volume store operations.</li>
+			</ul>
+		</article>
+	</section>
+</body>
+</html>

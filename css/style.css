@@ -801,6 +801,24 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center top;
 }
 
+.work.work-screenshot {
+  background-size: contain;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.work.work-screenshot .desc {
+  height: 100%;
+}
+
+.work.work-mongkol {
+  background-color: #071d20;
+}
+
+.portfolio-showcase {
+  margin-top: 28px;
+}
+
 @media screen and (max-width: 768px) {
   .work {
     height: 400px;
