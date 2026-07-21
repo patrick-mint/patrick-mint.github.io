@@ -6,7 +6,8 @@ const margin = 50;
 const bodySize = 9.5;
 const leading = 14;
 let y = 790;
-const content = [];
+const contents = [[]];
+let content = contents[0];
 
 function escapePdf(value) {
   return value.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)');
@@ -51,6 +52,12 @@ function section(title) {
   y -= 16;
 }
 
+function newPage() {
+  content = [];
+  contents.push(content);
+  y = 790;
+}
+
 function role(title, dates, company, bullets) {
   text(title, margin, 'F2', 10);
   text(dates, 432, 'F1', 8.5);
@@ -71,13 +78,14 @@ function role(title, dates, company, bullets) {
 }
 
 text('PAKORNPAT AMORNLERTPANIT', margin, 'F2', 18);
-y -= 16;
+y -= 21;
 text('Bangkok, Thailand  |  +66 87 795 9752  |  pakornpat.a@gmail.com', margin, 'F1', 9);
-y -= 13;
+y -= 16;
 text('GitHub: github.com/patrick-mint  |  Portfolio: patrick-mint.github.io', margin, 'F1', 9);
+y -= 6;
 
 section('Professional Summary');
-paragraph('Backend-focused software engineer experienced in payment systems, POS integrations, API integrations, and event-driven architecture. Skilled in Node.js, TypeScript, Java, Kafka, MySQL, AWS, and Docker, with production experience supporting transaction services, KYC-related workflows, and legacy application migration.');
+paragraph('Backend-focused software engineer experienced in payment systems, POS integrations, API integrations, and event-driven architecture. Skilled in Node.js, TypeScript, Java, Kafka, MySQL, AWS, and Docker, with production experience supporting transaction services, KYC-related workflows, and legacy application migration. Brings earlier people management and customer coordination experience from hospitality operations.');
 
 section('Technical Skills');
 paragraph('Languages: JavaScript, TypeScript, Java');
@@ -85,6 +93,7 @@ paragraph('Backend: Node.js, Express, Spring Boot, REST APIs');
 paragraph('Data and Events: MySQL, Redis, Kafka, XML/JSON transformation');
 paragraph('Cloud and DevOps: AWS (EC2, S3, Lambda, CloudWatch), Docker');
 paragraph('Tools: Git, Postman, logging and monitoring');
+paragraph('Leadership: People management, customer coordination, cross-functional collaboration');
 
 section('Experience');
 role('Java Developer (Contract)', 'Mar 2026 - Present', 'Counter Service Co., Ltd. (7-Eleven Group), Bangkok', [
@@ -106,14 +115,29 @@ role("Senior Backend Engineer (Contract)", 'Sep 2025 - Feb 2026', "Lotus's (CP G
   'Designed scalable APIs supporting high-volume store operations.',
 ]);
 
-const stream = content.join('\n');
+newPage();
+text('PAKORNPAT AMORNLERTPANIT', margin, 'F2', 14);
+y -= 24;
+section('Previous Management Experience');
+role('Front Desk Manager', 'May 2019 - Mar 2022', 'Shangri-La Hotel, Bangkok', [
+  'Led front desk operations and supported team members to deliver consistent guest service.',
+  'Coordinated directly with guests and cross-functional hotel teams to resolve service issues.',
+]);
+role('Executive Lounge Manager', 'Sep 2017 - May 2019', 'Shangri-La Hotel, Bangkok', [
+  'Managed Executive Lounge operations and coordinated guest requirements with internal teams.',
+  'Supported and developed service staff while maintaining a high standard of guest experience.',
+]);
+
+const streams = contents.map((pageContent) => pageContent.join('\n'));
 const objects = [
   '<< /Type /Catalog /Pages 2 0 R >>',
-  '<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
-  `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>`,
+  '<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>',
+  `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 7 0 R >>`,
+  `<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 8 0 R >>`,
   '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
   '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>',
-  `<< /Length ${Buffer.byteLength(stream)} >>\nstream\n${stream}\nendstream`,
+  `<< /Length ${Buffer.byteLength(streams[0])} >>\nstream\n${streams[0]}\nendstream`,
+  `<< /Length ${Buffer.byteLength(streams[1])} >>\nstream\n${streams[1]}\nendstream`,
 ];
 
 let pdf = '%PDF-1.4\n';

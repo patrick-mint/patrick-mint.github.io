@@ -7,12 +7,14 @@
 		@page { size: A4; margin: 16mm 17mm; }
 		* { box-sizing: border-box; }
 		body { color: #182230; font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; line-height: 1.42; margin: 0; }
-		h1 { font-size: 22pt; letter-spacing: .5px; margin: 0 0 2px; }
+		h1 { font-size: 22pt; letter-spacing: .5px; margin: 0 0 7px; }
 		h2 { border-bottom: 1.5px solid #27364a; font-size: 12pt; letter-spacing: .7px; margin: 21px 0 9px; padding-bottom: 4px; text-transform: uppercase; }
-		.contact { color: #475467; font-size: 9.5pt; }
+		header { margin-bottom: 8px; }
+		.contact { color: #475467; font-size: 9.5pt; line-height: 1.55; }
 		.contact a { color: #175cd3; text-decoration: none; }
 		.summary { margin: 0; }
 		.role { break-inside: avoid; margin: 0 0 14px; }
+		.previous-management { break-before: page; }
 		.role-header { display: flex; justify-content: space-between; gap: 16px; }
 		.role-title { font-size: 11pt; font-weight: 700; }
 		.role-date { color: #475467; font-size: 9.5pt; text-align: right; white-space: nowrap; }
@@ -33,7 +35,7 @@
 
 	<section>
 		<h2>Professional Summary</h2>
-		<p class="summary">Backend-focused software engineer experienced in payment systems, POS integrations, API integrations, and event-driven architecture. Skilled in Node.js, TypeScript, Java, Kafka, MySQL, AWS, and Docker, with production experience supporting transaction services, KYC-related workflows, and legacy application migration.</p>
+		<p class="summary">Backend-focused software engineer experienced in payment systems, POS integrations, API integrations, and event-driven architecture. Skilled in Node.js, TypeScript, Java, Kafka, MySQL, AWS, and Docker, with production experience supporting transaction services, KYC-related workflows, and legacy application migration. Brings earlier people management and customer coordination experience from hospitality operations.</p>
 	</section>
 
 	<section>
@@ -44,6 +46,7 @@
 			<div><strong>Data &amp; Events:</strong> MySQL, Redis, Kafka, XML/JSON transformation</div>
 			<div><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3, Lambda, CloudWatch), Docker</div>
 			<div><strong>Tools:</strong> Git, Postman, logging and monitoring</div>
+			<div><strong>Leadership:</strong> People management, customer coordination, cross-functional collaboration</div>
 		</div>
 	</section>
 
@@ -77,6 +80,26 @@
 				<li>Built Node.js and TypeScript backend services for POS systems.</li>
 				<li>Implemented Kafka-based event-driven architecture for real-time data processing.</li>
 				<li>Designed scalable APIs supporting high-volume store operations.</li>
+			</ul>
+		</article>
+	</section>
+
+	<section class="previous-management">
+		<h2>Previous Management Experience</h2>
+		<article class="role">
+			<div class="role-header"><div class="role-title">Front Desk Manager</div><div class="role-date">May 2019 – Mar 2022</div></div>
+			<div class="company">Shangri-La Hotel, Bangkok</div>
+			<ul>
+				<li>Led front desk operations and supported team members to deliver consistent guest service.</li>
+				<li>Coordinated directly with guests and cross-functional hotel teams to resolve service issues.</li>
+			</ul>
+		</article>
+		<article class="role">
+			<div class="role-header"><div class="role-title">Executive Lounge Manager</div><div class="role-date">Sep 2017 – May 2019</div></div>
+			<div class="company">Shangri-La Hotel, Bangkok</div>
+			<ul>
+				<li>Managed Executive Lounge operations and coordinated guest requirements with internal teams.</li>
+				<li>Supported and developed service staff while maintaining a high standard of guest experience.</li>
 			</ul>
 		</article>
 	</section>
